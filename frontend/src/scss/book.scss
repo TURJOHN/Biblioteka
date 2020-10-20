@@ -1,0 +1,50 @@
+.book__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.overflow{
+    overflow: auto;
+    max-width: 600px;
+}
+.underline{
+    border-bottom: lightseagreen 1px solid;
+    word-wrap:break-word;
+    max-width:100%;
+}
+.comments, .reviews{
+
+    width: 50vw;
+    border: lightseagreen 0.5px solid;
+}
+.comments{
+    min-height: 300px;
+    max-height: 300px;
+}
+.reviews{
+    min-height: 300px;
+    max-height: 500px;
+}
+
+.book__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.book__inputs{
+    resize: none;
+    width: 100%;
+}
+.bb{
+    margin: 2px;
+    @media all and (max-width:1018px){
+        width: 30vh;
+    }
+}
+.book__segment{
+    img{
+        margin: 1%;
+    }
+}

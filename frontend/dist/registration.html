@@ -1,0 +1,57 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Strona</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text:400,500,700|Montserrat:300,400,400i,500,600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+        integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/books-icon.ico">
+    <script src="js/signin.min.js" defer></script>
+</head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <h2><a href="index.html">VLibrary</a></h2>
+            </div>
+            <input type="checkbox" id="toggler">
+            <label for="toggler" class="navbar__btn--show">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <ul class="navbar__menu">
+                <a class="navbar__link" href="library.html">Biblioteka</a>
+                <a class="navbar__link" id="znika" href="login.html">Logowanie</a>
+                <a class="navbar__link profil" href="profil.html" id="pojawia">Profil</a>
+                <p class="navbar__link wyloguj" id="wyloguj">Wyloguj</p>
+                <label for="toggler" class="navbar__btn--hide">
+                    <i class="fas fa-times"></i>
+                </label>
+            </ul>
+        </nav>
+        <div class="background__registration">
+            <div class="container">
+            <form class="form__background" id="myForm">
+                <div class="form__text">REJESTRACJA</div>
+                <input class="form__input" type="text" name="Name" id="name" placeholder="Podaj imie" minlength="3" required>
+                <input class="form__input" type="text" name="LName" id="lname" placeholder="Podaj nazwisko" required>
+                <input class="form__input" type="email" id="email" placeholder="Wprowadź adres email" required>
+                <input class="form__input" type="password"  id="password" placeholder="Podaj hasło" minlength="5" required>
+                <input class="form__input" type="password"  id="password-again" placeholder="Powtórz hasło" minlength="5" required>
+                <input class="form__button" type="submit" value="Zatwierdź" id="registration">
+            </form>
+            </div>
+        </div>
+        <footer class="footer">
+
+        </footer>
+    </body>
+    </html>

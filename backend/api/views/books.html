@@ -1,0 +1,25 @@
+<html >
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <section class="home">
+    <h1>Book list</h1>
+    <ul class="list-group">
+        <% for(var i=0; i<data.length; i++) {%>
+            <li class="list-group-item">
+                <span>Tytuł: </span><%= data[i].BTitle %>
+                <br/>
+                <span>pdf: </span><%= data[i].pdfName %>
+            </li>
+            <form method="post" action= <%= '/bookshelf/' + data[i].IdBook %>>
+                <button>Czytaj</button>
+            </form>
+        <% } %>
+    </ul>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+@import 'registration';
+@import 'profile';
+@import 'library';
+@import 'book';
+@import 'rater';
+
+body {
+    background: white;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Big Shoulders Text', cursive;
+    //font-family: 'Montserrat', sans-serif;
+    //font-family: 'Lato', sans-serif;
+}
+.navbar__logo{
+    text-transform: uppercase;
+    a{
+        text-decoration: none;
+        color: white;
+        &::visited{
+            color: white;
+        }
+    }
+}
+.navbar{
+    margin: 0;
+    padding: 0 20px;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: row;
+}
+.navbar__menu{
+    @media all and (max-width:800px) {
+        margin: 0;
+        z-index: 1000;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #333333;
+        top: 0;
+        right: -100%;
+        text-align: center;
+        padding: 80px 0;
+        line-height: normal;
+        transition: 0.7s;
+    }
+}
+.navbar__link{
+    order: 2;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    &:hover{
+        color: #81ecec;
+    }
+    @media all and (max-width:800px) {
+        display: block;
+        padding: 20px;
+    }
+}
+.navbar__btn--hide, .navbar__btn--show{
+    order: 3;
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    &:hover{
+        color: #81ecec;
+    }
+    @media all and (max-width:800px) {
+        display: block;
+    }
+}
+.navbar__btn--hide{
+     @media all and (max-width:800px) {
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+}
+#toggler{
+    position: absolute;
+    visibility: hidden;
+    z-index: -111;
+    @media all and (max-width:800px) {
+        &:checked ~ .navbar__menu{
+    right: 0;
+    }
+    }
+}
+.banner{
+    background-image: url("https://images.pexels.com/photos/1005324/literature-book-open-pages-1005324.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+    width: 100%;
+    height: 90vh;
+}
+.footer{
+    background: black;
+    height: 3vh;
+}
+.wyloguj{
+    cursor: pointer;
+    display: none;
+}
+.profil{
+    display: none;
+}
+.green{
+    background-color: greenyellow;
+}
+.yellow{
+    background-color: rgb(255, 230, 0);
+}
+.reading{
+    min-width: 50%;
+    min-height: 90vh;
+    @media all and (max-width:1300px) {
+        min-width: 100%;}
+}
+.readBook{
+    min-width: 100%;
+    min-height: 90vh;
+    justify-content: center;
+    display: flex;
+}
+.znika{
+    display: none;
+    display: inline;
+}
